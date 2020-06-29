@@ -1,0 +1,260 @@
+$sm: 568px;
+$md: 768px;
+
+#home_page {
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 100% !important;
+  background-color: $light-purple;
+  width: 100%;
+  // min-width: 100%;
+
+  .hero-section {
+    font-family: Montserrat;
+    background: url("/preaching.png") no-repeat;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    .container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+    .text-content {
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      max-width: 60%;
+      padding: 0 0.5rem;
+      .latest_sermon {
+        font-weight: 500;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 0.5% 3%;
+        color: #fff;
+      }
+      .display-3 {
+        font-weight: 700;
+        color: #fff;
+        font-size: 4rem;
+        margin: 1.5rem 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          margin-right: 0.5rem;
+        }
+        button {
+          text-transform: uppercase;
+        }
+        @media screen and (max-width: $sm) {
+          flex-direction: column;
+          li {
+            margin: 0.25rem 0;
+            .btn {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: $md) {
+        // bottom: 22%;
+        max-width: 95%;
+        margin-bottom: 5%;
+
+        .display-3 {
+          font-size: 2.3rem;
+          width: inherit;
+          margin: 3% 0;
+        }
+        .btn {
+          font-size: 1.2rem;
+        }
+      }
+      @media screen and (max-width: $sm) {
+        bottom: 0;
+        .btn {
+          font-size: 15px !important;
+        }
+        .display-3 {
+          margin: 1% 0;
+        }
+      }
+    }
+  }
+  .recent_sermons {
+    height: 100%;
+
+    .item_list {
+      height: 100%;
+      margin: auto;
+    }
+    .image_wrapper {
+      position: relative;
+      img {
+        width: 438px;
+        height: 600px;
+        max-width: 100%;
+      }
+      .text_content {
+        position: absolute;
+        color: #fff;
+        width: 400px;
+        left: 5%;
+        top: 65%;
+        .display-4 {
+          font-weight: 500;
+          color: #fff;
+          font-size: max(2rem);
+          margin: 1.5rem 0;
+        }
+        .btn {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .prayer {
+    // overflow: hidden;
+    background: url("/prayer.png");
+
+    // height: 30vh;
+    padding: 2rem 0;
+    background-size: cover;
+    background-position: center;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      .btn {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .fellowship {
+    height: 100%;
+    padding: 2rem 0;
+    display: grid;
+
+    place-items: center;
+    .grid_item {
+      display: grid;
+      place-items: center;
+      background-position: center;
+      height: 25rem;
+    }
+    @media screen and (max-width: $sm) {
+      .display-2 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  .testimony {
+    height: 100%;
+
+    padding: 3rem 0;
+    .wrapper {
+      width: 100%;
+      max-width: 860px;
+      justify-content: center;
+      align-items: center;
+      .image {
+        flex: 1;
+      }
+      .text_content {
+        flex: 3;
+      }
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        .text_content {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .about_us {
+    color: white;
+
+    .wrapper {
+      height: inherit;
+    }
+
+    .main_div {
+      position: relative;
+      height: 20rem;
+      width: 100%;
+
+      .text-content {
+        height: 100%;
+        width: 568px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        .display-4 {
+          font-weight: 500;
+          font-size: 2rem;
+          // padding: 0.5rem;
+        }
+        .line {
+          display: inline-block;
+          width: 40px;
+          height: 1px;
+          background-color: white;
+          margin-top: 0;
+        }
+      }
+      @media screen and (max-width: $sm) {
+        .text-content {
+          width: 310px;
+          margin: auto;
+          .display-4 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .secondary_div {
+      position: relative;
+      width: 100%;
+      bottom: 5%;
+      background-color: $dark;
+      padding-bottom: 3rem;
+      z-index: 1;
+
+      .item {
+        // background-color: $secondary;
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
+        height: 100%;
+        .text_area {
+          display: grid;
+          height: 100%;
+          margin: auto;
+        }
+        .image_area {
+          width: 100%;
+          // height: 100%;
+          display: grid;
+          place-items: center;
+          img {
+            width: inherit;
+            height: inherit;
+          }
+        }
+        p {
+          font-size: large;
+        }
+      }
+    }
+  }
+}
