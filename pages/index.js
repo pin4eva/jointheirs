@@ -9,7 +9,7 @@ import AboutSection from "../components/home/AboutSection";
 
 const HomePage = () => {
   return (
-    <Front>
+    <Front title="Home">
       <Wrapper id="home_page">
         <section className="hero-section">
           <div className="container ">

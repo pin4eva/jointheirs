@@ -5,15 +5,15 @@ import Head from "next/head";
 import styled from "styled-components";
 import FrontFooter from "../components/FrontFooter";
 
-const Front = ({ children }) => {
+const Front = ({ children, title }) => {
   return (
     <Fragment>
       <Head>
-        {/* <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-        /> */}
-        <title>JHAI</title>
+        <meta
+          name="description"
+          content="The Official website of Joint Heirs Assembly International"
+        />
+        <title>JHAI | {title} </title>
       </Head>
       <Wrapper id="front_layout">
         <header>
@@ -32,5 +32,6 @@ const Wrapper = styled.section`
 
 Front.propTypes = {
   children: PropTypes.node,
+  title: PropTypes.string,
 };
 export default Front;

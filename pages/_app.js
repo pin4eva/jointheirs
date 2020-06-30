@@ -14,6 +14,9 @@ const MyApp = ({ Component, PageProps }) => {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <title>Joint Heirs Assembly International</title>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
       </Head>
       <ThemeProvider theme={theme}>
