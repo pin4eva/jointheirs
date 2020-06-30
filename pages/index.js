@@ -104,7 +104,7 @@ const HomePage = () => {
             <div className="wrapper d-flex m-auto ">
               <div className="image ">
                 <img
-                  src="/about.png"
+                  src="/miracle.jpg"
                   alt=""
                   style={{ width: "196px", height: "196px" }}
                   className="rounded-pill"
@@ -171,12 +171,8 @@ const HomePage = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label>Example textarea</label>
-                    <textarea
-                      className="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="10"
-                    ></textarea>
+                    <label>Message</label>
+                    <textarea className="form-control" rows="10"></textarea>
                   </div>
                 </form>
               </div>

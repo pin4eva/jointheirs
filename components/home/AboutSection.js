@@ -20,7 +20,7 @@ const AboutSection = () => {
                   <h2 className="text-center font-weight-bolder">About Us</h2>
                   <div className="px-2 text-center">
                     <p>
-                      Joint Heirs was started June 2020 by God through his
+                      Joint Heirs was started June 2006 by God through his
                       servant Apostle Edirhin Eta.
                     </p>
                     <p>
